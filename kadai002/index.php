@@ -6,7 +6,7 @@
 <body>
 
   <?php
-    echo Hello + date('Y/m/d H:i:s') ;
+    echo date('Y/m/d H:i:s') ;
   ?>
 
 </body>
