@@ -4,7 +4,7 @@
 <title>Title</title>
 </head>
 <body>
-  <form action="tenki02.php">
+  <form action="tenki02.php" method="post">
       <label for="name">名前:</label>
       <input type="text" id="name" name="name"><br><br>
       <label for="post">投稿内容:</label>
