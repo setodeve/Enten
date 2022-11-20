@@ -1,3 +1,13 @@
+
+<p>
+  <?php echo $_POST["name"] ;?>
+</p>
+<form action="tenki03.php" method="post">
+  <div>
+      <input type="hidden" id="name" name="name" value="<?php echo $_POST["name"] ;?>">
+      <input type="submit" value="確認">
+  </div>
+</form>
 <?php
 
   function getRequest(){
@@ -8,7 +18,6 @@
       error_log($_GET["mark"], 0);
       error_log("Got", 0);
     }elseif(!empty($_POST)){
-      echo array_key_exists("name",$_POST);
       error_log($_POST["name"], 0);
       error_log($_POST["post"], 0);
       error_log($_POST["gender"], 0);
