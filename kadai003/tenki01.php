@@ -3,6 +3,10 @@
 <head>
 <title>Title</title>
 </head>
+<?php
+require 'header.php'; 
+echo rtnHeader();
+?>
 <body>
   <form action="tenki02.php" method="post">
       <label for="name">名前:</label>
@@ -25,4 +29,8 @@
   </form>
 
 </body>
+<?php
+require 'footer.php'; 
+echo rtnFooter();
+?>
 </html>

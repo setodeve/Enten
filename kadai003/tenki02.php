@@ -1,4 +1,7 @@
-
+<?php
+require 'header.php'; 
+echo rtnHeader();
+?>
 <p>
   <?php echo $_POST["name"] ;?>
 </p>
@@ -33,4 +36,7 @@
   }
 
   getRequest();
+
+  require 'footer.php'; 
+  echo rtnFooter();
 ?>
