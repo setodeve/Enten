@@ -8,7 +8,7 @@ require '../kadai003/header.php';
 echo rtnHeader();
 ?>
 <body>
-  <form action="tenki02.php" method="post">
+  <form action="stock02.php" method="post">
       <label for="name">名前:</label>
       <input type="text" id="name" name="name"><br><br>
       <label for="post">投稿内容:</label>
