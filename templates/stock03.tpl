@@ -8,8 +8,8 @@
 
 <body>
 <p>{$name}</p>
+<p>{$post}</p>
 <p>登録しました。</p>
-</form>
 
 </body>
 
