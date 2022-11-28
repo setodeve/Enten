@@ -5,11 +5,9 @@
 </head>
  {include file='header.tpl'}
 
-
 <body>
 
 <p>{$name}</p>
-<br>
 <p>{$post}</p>
 
 </body>
