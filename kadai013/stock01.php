@@ -1,25 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>株価についての話題</title>
-</head>
-<?php
-require '../kadai003/header.php'; 
-echo rtnHeader();
-?>
-<body>
-  <form action="stock02.php" method="post">
-      <label for="name">名前:</label>
-      <input type="text" id="name" name="name"><br><br>
-      <label for="post">投稿内容:</label>
-      <input type="text" id="post" name="post"><br><br>
-      <input type="submit" value="送信">
 
-  </form>
-
-</body>
 <?php
-require '../kadai003/footer.php'; 
-echo rtnFooter();
+require ("/Applications/XAMPP/xamppfiles/lib/php/smarty-4.3.0/libs/Smarty.class.php");
+
+$smart = new Smarty();
+$smart->template_dir = '/Applications/XAMPP/xamppfiles/htdocs/Enten/templates';
+$smart->config_dir = ' /Applications/XAMPP/xamppfiles/htdocs/Enten/config';
+$smart->cache_dir = '/Applications/XAMPP/xamppfiles/htdocs/Enten/cache';
+$smart->compile_dir = '/Applications/XAMPP/xamppfiles/htdocs/Enten/templates_c';
+$smart->display('../templates/stock01.tpl');
+
 ?>
-</html>
+

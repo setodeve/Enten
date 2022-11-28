@@ -1,20 +1,16 @@
-<?php
-require '../kadai003/header.php'; 
-echo rtnHeader();
-?>
-<p>
-  <?php echo $_POST["name"] ;?>
-</p>
 
-<form action="stock03.php" method="post">
-  <div>
-      <input type="hidden" id="name" name="name" value="<?php echo $_POST["name"] ;?>">
-      <input type="hidden" id="post" name="post" value="<?php echo $_POST["post"] ;?>">
-      <input type="submit" value="確認">
-  </div>
-</form>
 
 <?php
-  require '../kadai003/footer.php'; 
-  echo rtnFooter();
+require ("/Applications/XAMPP/xamppfiles/lib/php/smarty-4.3.0/libs/Smarty.class.php");
+
+$smart = new Smarty();
+$smart->template_dir = '/Applications/XAMPP/xamppfiles/htdocs/Enten/templates';
+$smart->config_dir = ' /Applications/XAMPP/xamppfiles/htdocs/Enten/config';
+$smart->cache_dir = '/Applications/XAMPP/xamppfiles/htdocs/Enten/cache';
+$smart->compile_dir = '/Applications/XAMPP/xamppfiles/htdocs/Enten/templates_c';
+$smart->assign('name',$_POST["name"]);
+$smart->assign('post',$_POST["post"]);
+$smart->display('../templates/stock02.tpl');
+
 ?>
+
