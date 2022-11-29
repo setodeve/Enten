@@ -1,11 +1,11 @@
 
 <?php
-class stock04{
+require_once("base.php");
+class stock04 extends Base{
   function execute(){
     require_once("forSmart.php");
-    require_once("database.php");
     
-    $stmt = $pdo->prepare( 'select * from stock ' );
+    $stmt = $this->pdo->prepare( 'select * from stock ' );
     $stmt->execute();
     $list = $stmt->fetchAll();
     
