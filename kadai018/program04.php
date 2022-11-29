@@ -1,20 +1,20 @@
 
 <?php
 require_once("base.php");
-class stock04 extends Base{
+class program04 extends Base{
   function execute(){
     require_once("forSmart.php");
     
-    $stmt = $this->pdo->prepare( 'select * from stock ' );
+    $stmt = $this->pdo->prepare( 'select * from program ' );
     $stmt->execute();
     $list = $stmt->fetchAll();
     
     $smart->assign('list',$list);
-    $smart->display('../templates/stock/stock04.tpl');    
+    $smart->display('../templates/program/program04.tpl');    
   }
 }
 
-$obj = new stock04();
+$obj = new program04();
 $obj->execute();
 
 ?>

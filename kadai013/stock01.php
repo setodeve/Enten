@@ -3,7 +3,7 @@
 class stock01{
   function execute(){
     require_once("forSmart.php");
-    $smart->display('../templates/stock01.tpl');
+    $smart->display('../templates/stock/stock01.tpl');
   }
 }
 

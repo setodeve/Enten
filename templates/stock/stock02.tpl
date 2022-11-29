@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>株価についての話題</title>
+{include file='title.tpl' title='株価についての話題'}
 </head>
  {include file='header.tpl'}
 

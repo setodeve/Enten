@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>株価についての話題</title>
+{include file='title.tpl' title='プログラミングについての話題'}
 </head>
  {include file='header.tpl'}
-
 
 <body>
 
   {foreach from=$list item=item}
-    <a href="stock05.php?id={$item["id"]}"> {$item["name"]}</a>
+    <a href="program05.php?id={$item["id"]}"> {$item["name"]}</a>
     <br>
   {/foreach}
 
